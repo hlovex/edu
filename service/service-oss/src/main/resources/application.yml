@@ -1,0 +1,20 @@
+server:
+  port: 8002
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: service-oss
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 20MB
+
+
+oss:
+  file:
+    endpoint: http://127.0.0.1:9000
+    accessKey: minioadmin
+    secretKey: minioadmin
+    bucketName: edu
