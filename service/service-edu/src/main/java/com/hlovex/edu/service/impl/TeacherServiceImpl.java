@@ -1,8 +1,8 @@
 package com.hlovex.edu.service.impl;
 
-import com.hlovex.edu.entity.EduTeacher;
+import com.hlovex.edu.entity.Teacher;
 import com.hlovex.edu.mapper.EduTeacherMapper;
-import com.hlovex.edu.service.EduTeacherService;
+import com.hlovex.edu.service.TeacherService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2021-02-12
  */
 @Service
-public class EduTeacherServiceImpl extends ServiceImpl<EduTeacherMapper, EduTeacher> implements EduTeacherService {
+public class TeacherServiceImpl extends ServiceImpl<EduTeacherMapper, Teacher> implements TeacherService {
 
 }

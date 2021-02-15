@@ -12,7 +12,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/eduservice/user")
 @CrossOrigin
-public class EduLoginController {
+public class LoginController {
 
     @PostMapping("/login")
     public R login(){

@@ -1,6 +1,6 @@
 package com.hlovex.edu.mapper;
 
-import com.hlovex.edu.entity.EduTeacher;
+import com.hlovex.edu.entity.Teacher;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author hlovex
  * @since 2021-02-12
  */
-public interface EduTeacherMapper extends BaseMapper<EduTeacher> {
+public interface EduTeacherMapper extends BaseMapper<Teacher> {
 
 }

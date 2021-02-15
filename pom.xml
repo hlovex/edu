@@ -46,6 +46,8 @@
         <docker.image.prefix>zx</docker.image.prefix>
         <cloud-alibaba.version>0.2.2.RELEASE</cloud-alibaba.version>
         <hutool.version>5.5.8</hutool.version>
+        <org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
+        <lombok.version>1.18.10</lombok.version>
     </properties>
 
     <dependencyManagement>

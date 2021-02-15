@@ -34,7 +34,7 @@ public class CodeGenerator {
          * mp生成service层代码，默认接口名称第一个字母有 I
          * */
         gc.setServiceName("%sService");    //去掉Service接口的首字母I
-        gc.setIdType(IdType.ID_WORKER_STR); //主键策略
+        gc.setIdType(IdType.AUTO); //主键策略
         gc.setDateType(DateType.ONLY_DATE);//定义生成的实体类中日期类型
         gc.setSwagger2(true);//开启Swagger2模式
 
@@ -52,7 +52,7 @@ public class CodeGenerator {
         // 4、包配置
         PackageConfig pc = new PackageConfig();
         pc.setParent("com.hlovex");
-        pc.setModuleName("serviceedu"); //模块名
+        pc.setModuleName("edu"); //模块名
         pc.setController("controller");
         pc.setEntity("entity");
         pc.setService("service");
@@ -61,8 +61,8 @@ public class CodeGenerator {
 
         // 5、策略配置
         StrategyConfig strategy = new StrategyConfig();
-//        strategy.setInclude("edu_chapter", "edu_course", "edu_course_description", "edu_video");
-        strategy.setInclude("edu_teacher");
+        strategy.setInclude("edu_chapter", "edu_course", "edu_course_description", "edu_video");
+//        strategy.setInclude("edu_course");
         strategy.setNaming(NamingStrategy.underline_to_camel);//数据库表映射到实体的命名策略
         strategy.setTablePrefix(pc.getModuleName() + "_"); //生成实体时去掉表前缀
 

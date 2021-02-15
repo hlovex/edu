@@ -1,6 +1,6 @@
 package com.hlovex.edu.service;
 
-import com.hlovex.edu.entity.EduTeacher;
+import com.hlovex.edu.entity.Teacher;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author hlovex
  * @since 2021-02-12
  */
-public interface EduTeacherService extends IService<EduTeacher> {
+public interface TeacherService extends IService<Teacher> {
 
 }
